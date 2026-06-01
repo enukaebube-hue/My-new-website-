@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My New Website</title>
+  <meta charset="UTF-8">
+  <title>Luxury Stay Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background: #1e3799;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1566073771259-6a8506099945") no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+    }
+
+    .search-box {
+      background: white;
+      padding: 20px;
+      margin: -40px auto 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+
+    .search-box input, .search-box button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    .search-box button {
+      background: #1e3799;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .rooms {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .room {
+      background: white;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 500px;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This site is hosted with GitHub Pages.</p>
+
+<header>
+  <h1>Luxury Stay Hotel</h1>
+  <p>Comfort • Luxury • Affordable</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Rooms</a>
+  <a href="#">Bookings</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Book Your Perfect Stay</h1>
+  <p>Best hotels at the best prices</p>
+</section>
+
+<div class="search-box">
+  <h3>Check Availability</h3>
+  <input type="date" placeholder="Check-in date">
+  <input type="date" placeholder="Check-out date">
+  <input type="number" placeholder="Number of guests">
+  <button>Search Rooms</button>
+</div>
+
+<section class="rooms">
+  <h2>Our Rooms</h2>
+
+  <div class="room">
+    <h3>Standard Room</h3>
+    <p>₦25,000 per night</p>
+    <button>Book Now</button>
+  </div>
+
+  <div class="room">
+    <h3>Deluxe Room</h3>
+    <p>₦45,000 per night</p>
+    <button>Book Now</button>
+  </div>
+
+  <div class="room">
+    <h3>Executive Suite</h3>
+    <p>₦80,000 per night</p>
+    <button>Book Now</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Luxury Stay Hotel | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
